@@ -1,0 +1,179 @@
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+}
+
+/* HTML Selectors */
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  background: lightblue;
+  text-align: center;
+}
+
+header img {
+  max-height: fit-content;
+  width: 70px;
+}
+
+header span {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 20px;
+}
+
+footer {
+  background: lightblue;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: left;
+}
+
+h2 {
+  margin: auto auto;
+  padding: 20px 20px;
+  background: lightblue;
+}
+
+main {
+  display: grid;
+  margin: auto;
+  max-width: 1024px;
+  padding: 0px 16px;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+/* Class Selectors */
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.navigation a {
+  display: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0px;
+  background: black;
+  color: white;
+}
+
+.navigation a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.open a {
+  display: block;
+}
+
+.card {
+  margin: 0px 0px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+
+.card ul {
+  margin: 0px 0px;
+  padding: 20px 20px;
+  text-align: left;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.filter-options button {
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-options button.active {
+  border: solid 2px black;
+}
+
+/* ID Selectors */
+#active::before {
+  content: ">| ";
+}
+
+#active::after {
+  content: " |<";
+}
+
+#active {
+  color: rgb(255, 255, 0);
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 4px 8px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  border-radius: 10px;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+#lastModified {
+  color: #750000;
+}
+
+#course-list p {
+  border: solid 2px black;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#course-list p:hover {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+
+#course-list p.completed {
+  background: lightblue;
+  font-weight: bold;
+}
+
+#spotlight-container img {
+  max-width: 250px;
+  width: 100%;
+  height: fit-content;
+}

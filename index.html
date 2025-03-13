@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Julio Reyes - WDD 231 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://julirey.github.io/wdd231/">
+    <title>Julio Reyes - WDD 231 - Web Frontend Development</title>
+    <meta name="author" content="Julio Reyes">
+    <meta 
+        name="description" 
+        content="Home page for the WDD231 - Front End Development course. It will serve as
+        a course assignment portal of Julio Reyes. It will be updated each week with links to the activities
+        and revisions as assigned.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/portrait.webp" alt="Portrait of Julio Reyes">
+        <span>Julio Reyes</span>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a id="active" href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/julirey" target="_blank">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/julioreyescc" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <button id="menu" aria-label="NavMenu"></button>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>Course Work</h2>
+            <div class="card-content">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Zulia, Venezuela</h2>
+            <div class="card-content">
+                <figure id="spotlight-container">
+                    <img src="images/maracaibo-bridge.webp" alt="Maracaibo Bridge “General Rafael Urdaneta”" width="250">
+                    <figcaption>Maracaibo Bridge “General Rafael Urdaneta”</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="courses" class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="card-content">
+                <div class="filter-options">
+                    <button class="active">All</button>
+                    <button>CSE</button>
+                    <button>WDD</button>
+                </div>
+                <hr>
+                <p id="credits">Total number of required credits: </p>
+                <div id="course-list"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span id="copyrightYear">©20XX</span> ☀️ Julio Reyes ☀️ Venezuela</p> 
+        <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+    </footer>
+</body>
+</html>
