@@ -66,10 +66,11 @@ figcaption {
   margin: 0;
   padding: 0;
   text-align: left;
+  overflow: hidden;
 }
 
 .navigation a {
-  display: none;
+  display: block;
   text-decoration: none;
   text-align: center;
   padding: 20px 0px;
@@ -80,10 +81,6 @@ figcaption {
 .navigation a:hover {
   font-weight: bold;
   text-decoration: underline;
-}
-
-.open a {
-  display: block;
 }
 
 .card {
@@ -176,4 +173,14 @@ figcaption {
   max-width: 250px;
   width: 100%;
   height: fit-content;
+}
+
+#animate-me {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease-out;
+}
+
+#animate-me.open {
+  grid-template-rows: 1fr;
 }
