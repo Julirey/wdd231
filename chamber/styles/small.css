@@ -27,8 +27,6 @@ body {
   flex-direction: column;
 }
 
-
-
 header {
   display: flex;
   flex-direction: column;
@@ -52,7 +50,7 @@ header img {
 }
 
 nav {
-    width: 100%;
+  width: 100%;
 }
 
 hr {
@@ -64,7 +62,7 @@ hr {
   padding: 0;
 }
 
-h2 {
+h1, h2 {
   text-align: center;
 }
 
@@ -74,33 +72,34 @@ main {
   margin: auto;
 }
 
-p, footer a {
+p,
+footer a {
   font-family: var(--paragraph-font);
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background: var(--primary-color);
-    margin-top: 40px;
-    padding: 20px;
-    color: white;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--primary-color);
+  margin-top: 40px;
+  padding: 20px;
+  color: white;
+  text-align: left;
 }
 
 footer a {
   display: block;
   color: white;
-  
 }
 
 footer a:hover {
   text-decoration: underline;
 }
 
-footer p, h3 {
-    margin: 0;
+footer p,
+h3 {
+  margin: 0;
 }
 
 /* Class Selectors */
@@ -147,6 +146,13 @@ footer p, h3 {
   gap: 1rem;
 }
 
+#title p {
+  font-family: var(--heading-font);
+  font-weight: bolder;
+  margin: auto auto;
+  font-size: clamp(0.75rem, 1.5vw, 3rem);
+}
+
 #active::before {
   content: ">";
 }
@@ -185,16 +191,16 @@ footer p, h3 {
 }
 
 #social {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
 }
 
 #social img {
-    display: block;
-    width: 4rem;
-    height: fit-content;
+  display: block;
+  width: 4rem;
+  height: fit-content;
 }
 
 #lastModified {
