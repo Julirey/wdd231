@@ -91,6 +91,8 @@ footer {
 footer a {
   display: block;
   color: white;
+  font-size: large;
+  padding: 5px;
 }
 
 footer a:hover {
