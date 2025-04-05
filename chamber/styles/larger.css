@@ -48,6 +48,35 @@
     display: none;
   }
 
+  /* Home Page */
+  .hero img {
+    max-height: 25rem;
+  }
+
+  #button-box {
+    grid-area: 2/3/4/4;
+  }
+
+  #content-home {
+    padding: 0px 30px;
+  }
+
+  #info-grid {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+    column-gap: 1rem;
+  }
+
+  #info-grid h2 {
+    text-align: left;
+  }
+
+  #spotlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+
   /* Directory page */
   .list section {
     display: grid;
