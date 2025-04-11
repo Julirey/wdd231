@@ -1,4 +1,5 @@
 const courseList = document.getElementById("course-list");
+const courseDetails = document.getElementById("course-details");
 const totalCreditsElement = document.getElementById("credits");
 
 const courses = [
@@ -89,11 +90,34 @@ function displayCourses(option = "All") {
       courseElement.classList.add("completed");
     }
 
+    courseElement.addEventListener('click', () => {
+      displayCourseDetails(course);
+  });
+  
     courseList.appendChild(courseElement);
   });
   totalCreditsElement.textContent = `The total number of credits is: ${getTotalCredits(filteredCourses)}`;
 }
 
+// Display Course Details
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = ""; 
+  courseDetails.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p><strong>Description:</strong>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal(); 
+  
+  const closeModal = document.getElementById("closeModal");
+  closeModal.addEventListener("click", () => {
+      courseDetails.close(); 
+  });
+}
 
 // Assign Event Listeners
 document.querySelectorAll(".filter-options button").forEach((button) => {
