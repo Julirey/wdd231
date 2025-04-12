@@ -82,4 +82,20 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1.5fr 0.5fr;
   }
+
+  /* Join page */
+  #content-join {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    column-gap: 2rem;
+  }
+
+  /* Thank you page */
+  #form-results-card {
+    max-width: 60%;
+  }
+
+  #form-results {
+    margin: 0 20%;
+  }
 }

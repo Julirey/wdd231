@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Maracaibo Chamber of Commerce - Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julirey.github.io/wdd231/chamber/images/hero-medium.webp">
+    <meta property="og:url" content="https://julirey.github.io/wdd231/chamber/join.html">
+    <title>Maracaibo Chamber of Commerce - Join</title>
+    <meta name="author" content="Julio Reyes">
+    <meta 
+        name="description" 
+        content="Join page for the Maracaibo Chamber of Commerce Website Project for the 
+        WDD 231 Course. This page provides a form to join the chamber.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Javascript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="images/logo.webp" alt="Logo of Maracaibo Chamber">
+            <p>Maracaibo Chamber of Commerce</p>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="menu" aria-label="NavMenu"></button>
+    <main>
+        <h1>Join</h1>
+        <div id="content-join">
+            <div>
+                <h2>Membership Application Form</h2>
+                <form action="thankyou.html" method="get" class="form1">
+                    <fieldset>
+                        <label>First Name* <input type="text" name="fname" id="fname" title="Enter your first name." autocomplete="given-name" required></label>
+                        <label>Last Name* <input type="text" name="lname" id="lname" title="Enter your last name." autocomplete="family-name" required></label>
+                        <label>Title or Position* <input type="text" name="organization-title" id="organization-title" title="Enter your title or position name at the organization." autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" required></label>
+                        <label>Email* <input type="email" name="email" id="email" title="Enter your email address." placeholder="example@domain.com"  autocomplete="email" required></label>
+                        <label>Phone* <input type="tel" name="phone" id="phone" title="Enter your phone number." placeholder="+1 (XXX) XXX-XXXX" autocomplete="tel" required></label>
+                        <label>Business/Organization's name* <input type="text" name="business" id="business" title="Enter the business name." autocomplete="organization" required></label>
+                        
+                        <div>Membership*</div>
+                        <label><input type="radio" name="membership" value="non-profit" title="Select a membership level." required>NP Membership</label>
+                        <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="silver">Silver Membership</label>
+                        <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+    
+                        <label>Business/Organization's description
+                            <textarea name="businessdesc" id="businessdesc" rows="5" cols="30" title="Enter the business description" placeholder="Type something about the business here..."></textarea>
+                        </label>
+                        
+                        <input type="hidden" name="date" id="date" value="0">
+                    </fieldset>
+                    <input type="submit" id="submit" value="Join The Chamber">
+                </form>
+            </div>
+            <div>
+                <h2>Membership Levels</h2>
+                <div id="membership-list"></div>
+                <dialog id="membership-details"></dialog>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-infobox">
+                <h3>Maracaibo Chamber of Commerce</h3>
+                <p>110 Avenida 24 Carretera La Paz</p>
+                <p>Maracaibo, Venezuela</p>
+                <a href="#">contactus@marachamber.com</a>
+                <a href="#">+(999) 9999-9999</a>
+        </div>
+        <div id="social">
+            <a href="#" target="_blank">
+                <img src="images/youtube.webp" alt="youtube icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/twitter.webp" alt="twitter icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/linkedin.webp" alt="linkedin icon">
+            </a>
+        </div>
+        <div class="footer-infobox">
+            <p>WDD 231 Project</p>
+            <p>Julio Reyes</p>
+            <p><span id="copyrightYear">©20XX</span> Maracaibo Chamber of Commerce</p> 
+            <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+        </div>
+    </footer>
+</body>
+</html>

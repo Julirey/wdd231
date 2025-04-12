@@ -1,0 +1,52 @@
+{
+    "memberships": [
+        {
+            "name": "Non-Profit",
+            "price": 0,
+            "level": 0,
+            "benefits": [
+                "No fee to join",
+                "Basic event advertisement",
+                "Invitations to events",
+                "Opportunity to hold public classes",
+                "Limited access to services"
+            ]
+        },
+        {
+            "name": "Bronze",
+            "price":  100,
+            "level": 1,
+            "benefits": [
+                "Basic event advertisement",
+                "Social media promotion",
+                "Access to basic training",
+                "News and insight on the latest information",
+                "No discount to services"
+            ]
+        },
+        {
+            "name": "Silver",
+            "price": 250,
+            "level": 2,
+            "benefits": [
+                "Event promotion and funding",
+                "Network recommendations and referrals",
+                "Moderate access to training courses",
+                "Some acknowledgements for contributions",
+                "10% discount to services"
+            ]
+        },
+        {
+            "name": "Gold",
+            "price": 500,
+            "level": 3,
+            "benefits": [
+                "Extensive social media management and promotion",
+                "Priority listing for events",
+                "Access to all courses",
+                "Exclusive acknowledgements for contributions",
+                "25% discount to services"
+            ]
+        }
+    ]
+}
