@@ -30,8 +30,6 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   gap: 1rem;
   background: var(--primary-color);
   color: white;
@@ -172,12 +170,13 @@ dialog button {
 #title {
   display: flex;
   gap: 1rem;
+  margin: 0 60px 0 20px;
 }
 
 #title p {
   font-family: var(--heading-font);
   font-weight: bolder;
-  margin: auto auto;
+  margin: auto 0;
   font-size: clamp(0.75rem, 1.5vw, 3rem);
 }
 
