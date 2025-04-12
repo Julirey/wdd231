@@ -401,7 +401,7 @@ dialog button {
 .form1 label {
   display: block;
   padding-top: 1rem;
-  color: var(--secondary-color);
+  color: rgb(211, 57, 2);
   font-size: 0.9rem;
 }
 
