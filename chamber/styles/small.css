@@ -140,7 +140,7 @@ dialog button {
 }
 
 .card-content {
-  padding: 0px 20px;
+  padding: 20px;
 }
 
 .navigation {
@@ -273,7 +273,8 @@ dialog button {
 }
 
 #content-home .card h2,
-#content-thankyou .card h2 {
+#content-thankyou .card h2,
+#content-discover .card h2 {
   background: var(--secondary-color);
   color: white;
   margin: 0px;
@@ -301,7 +302,8 @@ dialog button {
 }
 
 #spotlights-grid img,
-#current-weather img {
+#current-weather img,
+#locations-grid img {
   width: 100%;
   height: fit-content;
 }
@@ -316,7 +318,8 @@ dialog button {
 #content-directory,
 #content-home,
 #content-join,
-#content-thankyou {
+#content-thankyou,
+#content-discover {
   padding: 0px 10px;
 }
 
@@ -464,7 +467,8 @@ dialog button {
   gap: 2rem;
 }
 
-.membership-card button {
+.membership-card button,
+#locations-grid button {
   padding: 10px 20px;
 }
 
@@ -490,4 +494,49 @@ dialog button {
 
 #form-results {
   padding: 20px;
+}
+
+/* Discover page */
+#visits-message {
+    padding: 20px;
+    border: solid 5px var(--secondary-color);
+    margin: 0px auto;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+#locations-grid .card-content {
+    display: grid;
+    grid-template-areas: 
+    "img"
+    "desc"
+    "loc"
+    "button";
+}
+
+#locations-grid figure {
+    margin: 0px;
+    grid-area: img;
+}
+
+#locations-grid img {
+    margin: 0px auto;
+    max-width: 300px;
+    display: block;
+    text-align: center;
+}
+
+#locations-grid p {
+    grid-area: desc;
+}
+
+#locations-grid address {
+    margin: 20px 0px;
+    grid-area: loc;
+}
+
+#locations-grid button {
+    width: 100%;
+    border-radius: 20px;
+    grid-area: button;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Maracaibo Chamber of Commerce - Discover">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julirey.github.io/wdd231/chamber/images/hero-medium.webp">
+    <meta property="og:url" content="https://julirey.github.io/wdd231/chamber/discover.html">
+    <title>Maracaibo Chamber of Commerce - Discover</title>
+    <meta name="author" content="Julio Reyes">
+    <meta 
+        name="description" 
+        content="Discover page for the Maracaibo Chamber of Commerce Website Project for the 
+        WDD 231 Course. This page provides a list of interesting locations close to the chamber.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/extra-large.css">
+
+    <!-- Javascript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
+    <script src="scripts/locations.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="images/logo.webp" alt="Logo of Maracaibo Chamber">
+            <p>Maracaibo Chamber of Commerce</p>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a id="active" href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="menu" aria-label="NavMenu"></button>
+    <main>
+        <h1>Locations</h1>
+        <div id="content-discover">
+            <p id="visits-message"></p>
+            <div id="locations-grid"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-infobox">
+                <h3>Maracaibo Chamber of Commerce</h3>
+                <p>110 Avenida 24 Carretera La Paz</p>
+                <p>Maracaibo, Venezuela</p>
+                <a href="#">contactus@marachamber.com</a>
+                <a href="#">+(999) 9999-9999</a>
+        </div>
+        <div id="social">
+            <a href="#" target="_blank">
+                <img src="images/youtube.webp" alt="youtube icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/twitter.webp" alt="twitter icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/linkedin.webp" alt="linkedin icon">
+            </a>
+        </div>
+        <div class="footer-infobox">
+            <p>WDD 231 Project</p>
+            <p>Julio Reyes</p>
+            <p><span id="copyrightYear">©20XX</span> Maracaibo Chamber of Commerce</p> 
+            <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+        </div>
+    </footer>
+
+</body>
+</html>

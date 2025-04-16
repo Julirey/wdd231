@@ -103,4 +103,19 @@
   #form-results {
     margin: 0 20%;
   }
+
+  /* Discovery page */
+  #locations-grid .card-content {
+    display: grid;
+    grid-template-areas: 
+    "img  desc"
+    "img loc"
+    "button button";
+    gap: 1rem;
+    }
+
+  #locations-grid img:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
 }

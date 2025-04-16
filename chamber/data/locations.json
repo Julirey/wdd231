@@ -1,0 +1,52 @@
+{
+  "locations": [
+    {
+      "name": "Baralt Theater",
+      "address": "    Av.5, Maracaibo Zulia, Venezuela",
+      "description": "A major cultural institution, the theatre received a National Monument designation in 1981, recognizing its location as the site of the first film screenings in the country and as a longstanding part of the historic center of Maracaibo. ",
+      "image": "images/baralt.webp"
+    },
+    {
+      "name": "Maracaibo Bridge “General Rafael Urdaneta”",
+      "address": "Maracaibo, Zulia, Venezuela",
+      "description": "This bridge connects Maracaibo with much of the rest of the country. It is named after General Rafael Urdaneta, a Venezuelan hero of Independence who was born in Maracaibo. ",
+      "image": "images/bridge.webp"
+    },
+    {
+      "name": "El Saladillo Neighboorhood",
+      "address": "Carabobo St., Maracaibo, Zulia",
+      "description": "A street in the city that has been preserved in the traditional style with colorfully painted houses. There are many restaurants in this area to enjoy. Perfect for taking a stroll to enjoy the day.",
+      "image": "images/saladillo.webp"
+    },
+    {
+      "name": "Basilica Nuestra Señora de la Chiquinquira",
+      "address": "Avenida 12, Maracaibo, VE 4005",
+      "description": "It is the most visited Catholic church in the state of Zulia, Venezuela, located in the center of the city of Maracaibo. A building dedicated to the Virgin of Chiquinquirá, patron saint of the state of Zulia.",
+      "image": "images/basilica.webp"
+    },
+    {
+      "name": "Catedral de San Pedro y San Pablo de Maracaibo",
+      "address": "Avenida 4, con C. 95, Maracaibo 4001, Zulia",
+      "description": "Also known as just the Maracaibo Cathedral, Located in the Bolivar Square, the historic heart of the city of Maracaibo, and is the headquarters of all churches in the Archdiocese and a repository of its history and traditions. The style is neoclassical colonial, unique to the city, with few such buildings existing within Latin America. It was constructed between 1585 and 1650.",
+      "image": "images/cathedral.webp"
+    },
+    {
+      "name": "Lía Bermúdez Art Center",
+      "address": "Calle 99 Comercio, Maracaibo 4001 Venezuela",
+      "description": "It is a cultural center dedicated to presenting and promoting artistic expressions from the state of Zulia, such as theater performances, concerts, and workshops. It also functions as an exhibition center and museum. It is named after the Venezuelan artist and sculptor Lía Bermúdez. It was founded as a foundation in 1990 and inaugurated in 1993 in the building that had housed Maracaibo's Main Market since 1931.",
+      "image": "images/lia-bermudez.webp"
+    },
+    {
+      "name": "Plaza del Rosario de Nuestra Señora de Chiquinquira",
+      "address": "Between streets 95 ~ 96 & Av. 12 ~ 8, Maracaibo",
+      "description": "In this plaza, an eight-meter-high statue of the Virgin of Chiquinquirá, along with large fountains and plenty of space for walking, was built. Also known as known as El Paseo de la Chinita, it was created to pay tribute to the patron saint of Zulia. The site is part of a larger project that seeks to create an entire complex around the Marabina Basilica, but its construction has not yet been completed.",
+      "image": "images/rosario.webp"
+    },
+    {
+      "name": "Castillo de San Carlos de la Barra",
+      "address": "Península de San Carlos, Zulia",
+      "description": "It is a 17th-century star fort protecting Lake Maracaibo in Venezuela. It's one of a number of coastal fortifications which the Spanish built in Venezuela in colonial times. It was built in 1623 with limestone rocks, brought from the Island of Toas, at the entrance to the Maracaibo bar.",
+      "image": "images/castillo.webp"
+    }
+  ]
+}
