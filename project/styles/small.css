@@ -182,7 +182,11 @@ dialog button {
 }
 
 #active {
-  color: rgb(255, 255, 0);
+    color: yellow;
+}
+
+#active, #lastModified {
+  font-weight: bold;
 }
 
 #menu {
@@ -217,10 +221,6 @@ dialog button {
   display: block;
   width: 4rem;
   height: fit-content;
-}
-
-#lastModified {
-  color: yellow;
 }
 
 /* Home page */
