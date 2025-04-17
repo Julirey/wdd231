@@ -1,0 +1,84 @@
+{
+  "campsites": [
+    {
+      "name": "Club Alejandría",
+      "address": "Km 15 Vía Pereira - Alcalá Vereda Dinamarca",
+      "description": "Club Alejandría is a special place to spend your vacations and days of rest in the Colombian coffee region. We offer you a country hotel and camping area in the coffee region, located just 20 minutes from Pereira and 15 minutes from Panaca.",
+      "image": "images/alejandria.webp",
+      "status": "Full",
+      "info": [
+        "Capacity of 250 people","Spa everyday", "Reservations available", "General accommodations"
+      ]
+    },
+    {
+      "name": "Ecoparque Vayjú",
+      "address": "TKm 6 Vía Salónica Riofrío",
+      "description": "We invite you to enjoy our spectacular tourist destination, where you will find Adventure Sports, Myths and Legends Trail, Horseback Riding, Kayaking in our extensive Lake, Canopy, Climbing Wall, Cabins for Couples or Groups, Camping Area, Restaurant Service.",
+      "image": "images/ecoparque.webp",
+      "status": "Available",
+      "info": [
+        "Ecotourism destination","Everyday care", "General accommodations", "Day trip service reservations", "Pets allowed"
+      ]
+    },
+    {
+      "name": "Camping Las Brisas",
+      "address": "Sector Los Ceibos Vereda El Rosario",
+      "description": "Enjoy comfortable well-being in our facilities. We are located in Los Ceibos, Palmira in the tourist area of El Paraiso territory, schedule, call, book and live an unforgettable rest in our Camping Area in Palmira.",
+      "image": "images/brisas.webp",
+      "status": "Closed",
+      "info": [
+        "Rural Accommodation","Taxi service", "Climbing", "Swimming pool"
+      ]
+    },
+    {
+      "name": "Balneario La María",
+      "address": "Vía Buga - La Habana 3 Km adelante de Crucebar",
+      "description": "Come and enjoy this spectacular Spa, located in the famous sector of La María, Buga. You can enjoy a day full of fun, with its natural water pools, its spectacular slide and Garucha within the same pool. Enjoy a family stay in their Ecological Cabins.",
+      "image": "images/maria.webp",
+      "status": "Available",
+      "info": [
+        "Forest proximity","Natural water pools", "Thermal rock massage", "Pets allowed"
+      ]
+    },
+    {
+      "name": "Campi Hotel Guayacanes",
+      "address": "Km 4 Vía Quimbaya - Alcalá",
+      "description": "Campi Hotel Guayacanes is a place for country accommodation, with the comforts of a hotel, but changing the rooms for camping sites. Enjoy its large swimming pool, pool table, toad game, ping-pong and much more.",
+      "image": "images/guayacanes.webp",
+      "status": "Full",
+      "info": [
+        "Camping Hotel","24h service", "Camping tour and courses", "Rentable Hammocks"
+      ]
+    },
+    {
+      "name": "Posada la Calceta",
+      "address": "End of Calle Paez, Las Calcetas sector, El Rincon, Bejuma 2040 ",
+      "description": "Combining the opportunity to connect with animals and the joy of camping, here you can fulfill your dream of becoming one with nature, let yourself go with the flow and harmonize with the ecology of our beutifully maintained botanical garden.",
+      "image": "images/calceta.webp",
+      "status": "Available",
+      "info": [
+        "Free parking","Pool access", "On-site Restaurant", "Animal experience", "Pets allowed"
+      ]
+    },
+    {
+      "name": "Finca la Huérfana",
+      "address": "Carretera transandina Tachira via el Cobre, El Cobre 5021",
+      "description": "Finca La Huérfana, a place where you can touch nature, located at 2300m AMSL, mountains all over, best for birdwatching and treking. Delicious food, and thoughtful details, everything you need to enjoy your stay.",
+      "image": "images/huerfana.webp",
+      "status": "Available",
+      "info": [
+        "Very close proximity to forests","Treking paths", "Car-free community", "Quiet and Tranquil", "Nature oriented"
+      ]
+    },
+    {
+      "name": "Chivaton Camp",
+      "address": "Via Kavanayen, Km 26 Municipio Gran Sabana, Santa Elena de Uairen 8011",
+      "description": "The inn built with rocks and concrete has been built over 20 years ago by the indigenous Pemon region, the Canaima national park is an Indian reservation and only they are allowed to live in the park. ",
+      "image": "images/chivaton.webp",
+      "status": "Available",
+      "info": [
+        "City escape destination","Rural life", "Simple living", "Pets allowed", "Dinner and breakfast provided"
+      ]
+    }
+  ]
+}

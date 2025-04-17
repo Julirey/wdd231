@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Trujillo Camping Services - campsites">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julirey.github.io/wdd231/project/images/hero-medium.webp">
+    <meta property="og:url" content="https://julirey.github.io/wdd231/project/campsites.html">
+    <title>Trujillo Camping Services - Campsites</title>
+    <meta name="author" content="Julio Reyes">
+    <meta 
+        name="description" 
+        content="Campsites page for the Trujillo Camping Services Website Project for the 
+        WDD 231 Course. This page provides a list and information of recommended places for camping.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Javascript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/campsites.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="images/logo.webp" alt="Logo of Trujillo project" loading="lazy">
+            <p>Trujillo Camping Services</p>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a id="active" href="campsites.html">Campsites</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="menu" aria-label="NavMenu"></button>
+    <main>
+        <h1>Campsites</h1>
+        <div id="content-campsites">
+            <div id="campsites-grid"></div>
+            <dialog id="campsite-details"></dialog>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-infobox">
+            <p>WDD 231 Project</p>
+            <p>Julio Reyes</p>
+            <p><span id="copyrightYear">©20XX</span> Trujillo Camping Services</p> 
+            <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+        </div>
+        <div id="social">
+            <a href="#" target="_blank">
+                <img src="images/youtube.webp" alt="youtube icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/twitter.webp" alt="twitter icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

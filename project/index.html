@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Trujillo Camping Services - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julirey.github.io/wdd231/project/images/hero-medium.webp">
+    <meta property="og:url" content="https://julirey.github.io/wdd231/project/index.html">
+    <title>Trujillo Camping Services - Home</title>
+    <meta name="author" content="Julio Reyes">
+    <meta 
+        name="description" 
+        content="Home page for the Trujillo Camping Services Website Project for the 
+        WDD 231 Course. This page provides welcome interface to the users, guides them 
+        to the other pages, and shows them basic content regarding camping.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
+    <!-- Javascript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="images/logo.webp" alt="Logo of Trujillo project" loading="lazy">
+            <p>Trujillo Camping Services</p>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="campsites.html">Campsites</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="menu" aria-label="NavMenu"></button>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-medium.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                <img src="images/hero-small.webp" alt="Trujillo Bridge" width="500" height="200" loading="lazy">
+            </picture>
+            <a id="button-box" href="reservations.html">Make a Reservation</a>
+        </div>
+        <div id="content-home">
+        <h1>Home</h1>
+            <div id="home-grid">
+                <div id="info-cards">
+                    <section class="card">
+                        <h2>Welcome</h2>
+                        <div class="card-content">
+                            <p>We aim to help you make camping the best experience it could ever be!</p>
+                        </div>
+                    </section>
+                    <section id="current-weather" class="card">
+                        <h2>Current Weather</h2>
+                        <div class="card-content"></div>
+                    </section>
+                    <section id="forecast" class="card">
+                        <h2>Weather Forecast</h2>
+                        <div class="card-content"></div>
+                    </section>
+                </div>
+                <div class="card">
+                    <h2>Today's Recommended Camping Places</h2>
+                    <div id="spotlight" class="card-content"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-infobox">
+            <p>WDD 231 Project</p>
+            <p>Julio Reyes</p>
+            <p><span id="copyrightYear">©20XX</span> Trujillo Camping Services</p> 
+            <p id="lastModified">Last Modification: XX/XX/XXXX 00:00:00</p>
+        </div>
+        <div id="social">
+            <a href="#" target="_blank">
+                <img src="images/youtube.webp" alt="youtube icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/twitter.webp" alt="twitter icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

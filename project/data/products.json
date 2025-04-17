@@ -1,0 +1,116 @@
+{
+    "products": [
+        {
+            "name": "Leather Gloves",
+            "brand": "WZQH",
+            "image": "images/leather.webp",
+            "category": "gloves",
+            "price": 10
+        },
+        {
+            "name": "Synthetic Gloves",
+            "brand": "HANDLANDY",
+            "image": "images/synthetic.webp",
+            "category": "gloves",
+            "price": 15
+        },
+        {
+            "name": "Reinforced Gloves",
+            "brand": "Wells Lamont",
+            "image": "images/reinforced.webp",
+            "category": "gloves",
+            "price": 34
+        },
+        {
+            "name": "Rocker Chair",
+            "brand": "GCI OUTDOOR",
+            "image": "images/rocker.webp",
+            "category": "chair",
+            "price": 50
+        },
+        {
+            "name": "Foldable Chair",
+            "brand": "SAILARY",
+            "image": "images/foldable.webp",
+            "category": "chair",
+            "price": 20
+        },
+        {
+            "name": "Portable Chair",
+            "brand": "Damei",
+            "image": "images/portable.webp",
+            "category": "chair",
+            "price": 32
+        },
+        {
+            "name": "6-person Tent",
+            "brand": "Coleman",
+            "image": "images/medium.webp",
+            "category": "tent",
+            "price": 35
+        },
+        {
+            "name": "2-peron Tent",
+            "brand": "Wakeman Outdoors",
+            "image": "images/small.webp",
+            "category": "tent",
+            "price": 19
+        },
+        {
+            "name": "10-person Tent",
+            "brand": "UNP",
+            "image": "images/large.webp",
+            "category": "tent",
+            "price": 100
+        },
+        {
+            "name": "50L Backpack",
+            "brand": "Loowoko",
+            "image": "images/50b.webp",
+            "category": "backpack",
+            "price": 50
+        },
+        {
+            "name": "70L Backpack",
+            "brand": "WINTMING",
+            "image": "images/70b.webp",
+            "category": "backpack",
+            "price": 60
+        },
+        {
+            "name": "65L Backpack",
+            "brand": "Osprey Rook",
+            "image": "images/65b.webp",
+            "category": "backpack",
+            "price": 80
+        },
+        {
+            "name": "Cooler Backpack",
+            "brand": "Hulongo",
+            "image": "images/cooler.webp",
+            "category": "backpack",
+            "price": 39
+        },
+        {
+            "name": "Rain Poncho",
+            "brand": "SaphiRose",
+            "image": "images/poncho.webp",
+            "category": "coat",
+            "price": 13
+        },
+        {
+            "name": "Waterproof Jacket",
+            "brand": "Pioneer Camp",
+            "image": "images/waterproof.webp",
+            "category": "coat",
+            "price": 60
+        },
+        {
+            "name": "Puffer Jacket",
+            "brand": "MAGCOMSEN",
+            "image": "images/puffer.webp",
+            "category": "coat",
+            "price": 45
+        }
+    ]
+}

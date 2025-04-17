@@ -1,0 +1,480 @@
+/* Universal Selector */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primary-color: #3f77ab;
+  --secondary-color: #7feedb;
+
+  /* Fonts */
+  --font: "Roboto", Helvetica, sans-serif;
+}
+
+/* HTML Selectors */
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font);
+  text-align: left;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--primary-color);
+  color: white;
+  padding-top: 10px;
+}
+
+header h1 {
+  margin: auto auto;
+  font-size: clamp(0.75rem, 1.5vw, 3rem);
+}
+
+header img {
+  justify-self: center;
+  max-height: fit-content;
+  max-width: 46px;
+}
+
+nav {
+  width: 100%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid gray;
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+p,
+footer a {
+  font-family: var(--paragraph-font);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--primary-color);
+  margin-top: 40px;
+  padding: 40px;
+  color: white;
+  text-align: left;
+}
+
+footer a {
+  display: block;
+  color: white;
+  font-size: medium;
+  padding: 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p,
+h3 {
+  margin: 0;
+}
+
+dialog {
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+/* Class Selectors */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px 0px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.navigation a {
+  display: none;
+  text-align: center;
+  padding: 20px 0px;
+  background: black;
+  color: white;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.open a {
+  display: block;
+}
+
+/* ID Selectors */
+#title {
+  display: flex;
+  gap: 1rem;
+  margin: 0 60px 0 20px;
+}
+
+#title p {
+  font-family: var(--heading-font);
+  font-weight: bolder;
+  margin: auto 0;
+  font-size: clamp(0.75rem, 1.5vw, 3rem);
+}
+
+#active::before {
+  content: ">";
+}
+
+#active::after {
+  content: "<";
+}
+
+#active {
+  color: rgb(255, 255, 0);
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 4px 8px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 10px;
+  width: 40px;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+#social img {
+  display: block;
+  width: 4rem;
+  height: fit-content;
+}
+
+#lastModified {
+  color: yellow;
+}
+
+/* Home page */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.hero picture {
+  grid-area: 1/1/4/4;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: solid 4px var(--primary-color);
+}
+
+#button-box {
+  grid-area: 1/1/4/4;
+  justify-self: center;
+  align-self: center;
+  border-radius: 10px;
+  padding: 20px 30px;
+  background: var(--primary-color);
+  text-align: center;
+  color: white;
+}
+
+#button-box:hover {
+  background: var(--secondary-color);
+}
+
+.card h2 {
+  background: var(--secondary-color);
+  margin: 0px;
+  padding: 8px 16px;
+}
+
+#current-weather .card-content {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: 10px;
+}
+
+#current-weather img {
+    max-width: 100px;
+}
+
+#current-weather img,
+#campsites-grid img {
+  width: 100%;
+  height: fit-content;
+}
+
+#forecast .card-content section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#spotlight {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#spotlight img {
+    display: block;
+    width: 100%;
+    height: fit-content;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* Catalogue page */
+#content-home,
+#content-catalogue,
+#content-campsites,
+#content-reservations,
+#content-thankyou {
+  padding: 0px 10px;
+}
+
+.menu {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.menu select,
+.menu input,
+#products-grid button {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+#products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-gap: 5px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#products-grid img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 250px;
+}
+
+.added {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Campsites page */
+#campsites-grid .card-content {
+  display: grid;
+  grid-template-areas:
+    "img"
+    "desc"
+    "loc"
+    "button";
+}
+
+#campsites-grid figure {
+  margin: 0px;
+  grid-area: img;
+}
+
+#campsites-grid img {
+  margin: 0px auto;
+  max-width: 300px;
+  display: block;
+  text-align: center;
+}
+
+#campsites-grid p {
+  grid-area: desc;
+}
+
+#campsites-grid address {
+  margin: 20px 0px;
+  grid-area: loc;
+}
+
+#campsites-grid button {
+  width: 100%;
+  border-radius: 20px;
+  grid-area: button;
+  padding: 10px 20px;
+}
+
+/* Reservations page */
+.form1 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form1 fieldset {
+  margin: 2rem 0;
+  border: 2px solid var(--secondary-color);
+  padding: 0.5rem 3%;
+}
+
+.form1 label {
+  display: block;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form1 div {
+  padding-top: 1rem;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+.form1 input[type="text"],
+.form1 input[type="email"],
+.form1 input[type="tel"],
+.form1 select {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form1 input[type="submit"] {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 96%;
+  height: 60px;
+  margin: -1rem 2% 2rem 2%;
+}
+
+.form1 #reservation-desc {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.form1 input:required {
+  border-right: solid 8px red;
+}
+
+.form1 input:required:valid {
+  border-right: solid 8px green;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background: var(--secondary-color);
+  color: black;
+}
+
+/* Thank you page */
+#form-results-card {
+  margin: 0 auto;
+}
+
+#form-results {
+  padding: 20px;
+}
+
+/* Animations */
+#products-grid, 
+#campsites-grid {    
+    animation: slideIn 0.5s;
+}
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
